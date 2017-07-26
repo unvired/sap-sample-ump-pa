@@ -1,0 +1,3471 @@
+{
+  "Properties": {
+    "PACKAGE": "com.unvired.sample.sap",
+    "DESCRIPTION": "Unvired SAP Sample",
+    "LANGUAGE": "JAVA",
+    "RELEASE_VERSION": "1.0",
+    "ID": "360dfe5c-7133-4402-9e65-17c6d5e0c50b",
+    "DATA_FORMAT": "XML",
+    "VENDOR": "Unvired",
+    "NAME": "UnviredSAPSample",
+    "VERSION": "1.0"
+  },
+  "Systems": [
+    {
+      "Properties": {
+        "PROTOCOL": "http",
+        "SERVER": "192.168.98.160",
+        "APPLICATION": "UnviredSAPSample",
+        "USER": "chymedeveloper",
+        "SERVER_ID": "SVR328782931424",
+        "DESCRIPTION": "UMP Server",
+        "AUTH_TOKEN": "ma345n9t3aeihw3qxwcxbbqdig0laqddaxrxss2d",
+        "NAMESPACE": "UNVIRED",
+        "TYPE": "ME",
+        "SYNC_PORT": "8080",
+        "PASSWORD": "",
+        "NAME": "ME"
+      },
+      "Metadata": {
+        "BusinessEntity": [
+          {
+            "NAME": "PERSON",
+            "HEADER": "PERSON_HEADER",
+            "ATTACHMENT": "false",
+            "SAVE": "true",
+            "TYPE": "Application"
+          }
+        ]
+      },
+      "Types": [
+        {
+          "Properties": {
+            "NAME": "PERSON",
+            "DESCRIPTION": "ME Relica: Person (Sample Application)"
+          },
+          "Element": [
+            {
+              "Properties": {
+                "DESCRIPTION": "ME Relica: Person (Sample Application)",
+                "DECORATION": "",
+                "NAME": "PERSON",
+                "TYPE": "Complex"
+              },
+              "Element": [
+                {
+                  "Properties": {
+                    "NAME": "PERSON_HEADER",
+                    "TYPE": "Complex"
+                  },
+                  "Element": [
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "MANDATORY": "true",
+                        "LENGTH": "3",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "STRING",
+                        "KEY": "true",
+                        "DEFAULT": "",
+                        "DESCRIPTION": "Client",
+                        "NATIVE_TYPE": "0",
+                        "TYPE": "Simple",
+                        "NAME": "MANDT"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "MANDATORY": "true",
+                        "LENGTH": "10",
+                        "CLIENT_TYPE": "INTEGER",
+                        "XSD_TYPE": "LONG",
+                        "KEY": "true",
+                        "DEFAULT": "",
+                        "DESCRIPTION": "Person Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "TYPE": "Simple",
+                        "NAME": "PERSNUMBER"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "40",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "STRING",
+                        "DESCRIPTION": "First Name (Sample Application)",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "0",
+                        "TYPE": "Simple",
+                        "NAME": "FIRST_NAME"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "40",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "STRING",
+                        "DESCRIPTION": "Last Name (Sample Application)",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "0",
+                        "TYPE": "Simple",
+                        "NAME": "LAST_NAME"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "40",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "STRING",
+                        "DESCRIPTION": "Profession (Sample Application)",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "0",
+                        "TYPE": "Simple",
+                        "NAME": "PROFESSION"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "1",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "STRING",
+                        "DESCRIPTION": "Gender (Sample Application)",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "0",
+                        "TYPE": "Simple",
+                        "NAME": "SEX"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "10",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "DATE",
+                        "DESCRIPTION": "Birthday (Sample Application)",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "1",
+                        "TYPE": "Simple",
+                        "NAME": "BIRTHDAY"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "2",
+                        "LENGTH": "3",
+                        "CLIENT_TYPE": "REAL",
+                        "XSD_TYPE": "DECIMAL",
+                        "DESCRIPTION": "Weight (Sample Application)",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "2",
+                        "TYPE": "Simple",
+                        "NAME": "WEIGHT"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "2",
+                        "LENGTH": "3",
+                        "CLIENT_TYPE": "REAL",
+                        "XSD_TYPE": "DECIMAL",
+                        "DESCRIPTION": "Height (Sample Application)",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "2",
+                        "TYPE": "Simple",
+                        "NAME": "HEIGHT"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "2",
+                        "CLIENT_TYPE": "INTEGER",
+                        "XSD_TYPE": "LONG",
+                        "DESCRIPTION": "Category1 (Sample Application)",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "6",
+                        "TYPE": "Simple",
+                        "NAME": "CATEGORY1"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "20",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "STRING",
+                        "DESCRIPTION": "Category2 (Sample Application)",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "0",
+                        "TYPE": "Simple",
+                        "NAME": "CATEGORY2"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "10",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "DATE",
+                        "DESCRIPTION": "Created on",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "1",
+                        "TYPE": "Simple",
+                        "NAME": "CREDAT"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "12",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "STRING",
+                        "DESCRIPTION": "Created by",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "0",
+                        "TYPE": "Simple",
+                        "NAME": "CRENAM"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "8",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "TIME",
+                        "DESCRIPTION": "Create Time",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "3",
+                        "TYPE": "Simple",
+                        "NAME": "CRETIM"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "10",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "DATE",
+                        "DESCRIPTION": "Last Changed on",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "1",
+                        "TYPE": "Simple",
+                        "NAME": "CHGDAT"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "12",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "STRING",
+                        "DESCRIPTION": "Last Changed by",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "0",
+                        "TYPE": "Simple",
+                        "NAME": "CHGNAM"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "8",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "TIME",
+                        "DESCRIPTION": "Last Changed at",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "3",
+                        "TYPE": "Simple",
+                        "NAME": "CHGTIM"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "Properties": {
+                    "NAME": "E_MAIL",
+                    "TYPE": "Complex"
+                  },
+                  "Element": [
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "MANDATORY": "true",
+                        "LENGTH": "3",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "STRING",
+                        "KEY": "true",
+                        "DEFAULT": "",
+                        "DESCRIPTION": "Client",
+                        "NATIVE_TYPE": "0",
+                        "TYPE": "Simple",
+                        "NAME": "MANDT"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "MANDATORY": "true",
+                        "LENGTH": "10",
+                        "CLIENT_TYPE": "INTEGER",
+                        "XSD_TYPE": "LONG",
+                        "KEY": "true",
+                        "DEFAULT": "",
+                        "DESCRIPTION": "Person Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "TYPE": "Simple",
+                        "NAME": "PERSNUMBER"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "MANDATORY": "true",
+                        "LENGTH": "10",
+                        "CLIENT_TYPE": "INTEGER",
+                        "XSD_TYPE": "LONG",
+                        "KEY": "true",
+                        "DEFAULT": "",
+                        "DESCRIPTION": "Seqeunce Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "TYPE": "Simple",
+                        "NAME": "SEQNO_E_MAIL"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "40",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "STRING",
+                        "DESCRIPTION": "E-mail Address (Sample Application)",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "0",
+                        "TYPE": "Simple",
+                        "NAME": "E_ADDR"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "FRACTION": "0",
+                        "LENGTH": "40",
+                        "CLIENT_TYPE": "TEXT",
+                        "XSD_TYPE": "STRING",
+                        "DESCRIPTION": "E-mail Address Description (Sample Application)",
+                        "DEFAULT": "",
+                        "NATIVE_TYPE": "0",
+                        "TYPE": "Simple",
+                        "NAME": "E_ADDR_TEXT"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Functions": [
+        {
+          "Properties": {
+            "ID": "UNVIREDSAPSAMPLE_PA_CREATE_PERSON",
+            "REMOTE_ENABLE": "No",
+            "DESCRIPTION": "Create Person",
+            "ACTION": "Create",
+            "NAME": "CREATE_PERSON",
+            "TYPE": "Application"
+          },
+          "Input": [
+            "PERSON"
+          ],
+          "Output": [],
+          "Interfaces": [
+            {
+              "SYSTEM": "UNVIRED_SAP_SAMPLE",
+              "FUNCTION": "MEREP_CONTACT_CREATE"
+            }
+          ]
+        },
+        {
+          "Properties": {
+            "ID": "UNVIREDSAPSAMPLE_PA_GET_PERSON",
+            "REMOTE_ENABLE": "No",
+            "DESCRIPTION": "Get Person",
+            "ACTION": "Get",
+            "NAME": "GET_PERSON",
+            "TYPE": "Application"
+          },
+          "Input": [
+            "PERSON"
+          ],
+          "Output": [
+            "PERSON"
+          ],
+          "Interfaces": [
+            {
+              "SYSTEM": "UNVIRED_SAP_SAMPLE",
+              "FUNCTION": "MEREP_CONTACT_GETDETAIL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Properties": {
+        "PASSWD": "",
+        "USER": "induser",
+        "ASHOST": "192.168.98.250",
+        "DESCRIPTION": "Unvired SAP Sample",
+        "TYPE": "SAP_ABAP",
+        "R3NAME": "IED",
+        "SYSNR": "00",
+        "CLIENT": "800",
+        "NAME": "UNVIRED_SAP_SAMPLE",
+        "IMAGE": "iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAIAAAABc2X6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMK0KCsAAAAqmSURBVHhe7VoLcxPXFe4fqW1ewZAGyJQSMp3ApEybNqUJNGmaAknTzDQEwqPNdAoDM6T0STKTmbZpLPmNzcMEbIONIdiG2pg4OBAbEGDAtt6vlWS9ZWl3pZX77d7V9VqWHGvtFqpo5xt7dfbsvffbc85379XqG98s03+tUCCc7ygQzncUCOc7CoTzHQXC+Y6cCReV6UsrjctqTI8glteYllYZijXpY1YiZ8LztfpanT8WT/w3IUhIM341rCF2ewczT2tIG7MSKggb6m4H40Iynni04IzwOzuZBeXTsQVyJrxAawThxJT+Hi6sQe61s47pY0uQD4SdYe61NmaB5qvZArMijEqzhvh+Z+z8SPjEYLh1OHzVHr0/GnOE+Rgv0AFxcWHEx912szo3i7/3RllY6FVrkIdd5xGvEofBUXbYy8EeYhPULRvQ164OZoHWADVNG2pGqCfsjyX++aX/J422JZXGIo2o3gAq/NuHTS+fth+66nWEeDImU4B/odG2tMq4tMoE51X1liEvJEYe8YEeD4wTqBKngNVHzOsbbe9eZDqNkQiXlTZiu7ODWThjtoBKwmE2saPdVVqRuafiMgM4mwMcGdape8Fl1aaJqxr9B30ePiEGOSEk93Z56KU0wHNVnfn43QAbz8DZEuJRtzOPLYE6woF6XWCRzNYAesUaA+SxRIsTMdrwqbjpY6W8HeOEvd3uEsXciLueqjNFeZFDGmGpKWOJRmwTLRPjk7UmU+rZUThQt2ed86XMorfPBGoI1+iCv2h1FEkDAtVXWxw3XFFkuD3E91jG/vS5581zDr1fHqI5wD9/yqZsQbrL2GGI4Goa4Z82O24ysR5L5OBnHiQ2MRZpDB9e85HWCJxhcQZC+dAbZw41hLUD/uc+sZFHW1ymBz3oUBwpKk/OAlKQlwcnXDCEF1UY4Qn/FbWmeZKW4mFta2cgbGmEETRYcCOXEA72wi5T2tzqIFQBZ4TboZYtoIKwoUYX2NzqLJFGAxoLtfo1xy2IyW1XdEqxCbs7XdKNhpIy/b7L7tX1Fukuw9pjlgde8MpMOC4ImoFA0ceElWFDs500SOZb1WwBNYQP3wnU3g4umrymma+FwJo2tTrPjoTY1JzkjwlP1JhxFQznaY3XnFE4EH8IcstQOBthlOgPTiKJ5C62tbtgxFpKVClNbiqVBnWiFYTkvHfFs7zWlNY36g31uanVcccdg2jV6PywiPaykReb7MjhP/Z6SrSyJ1oIsXEl4dVHLHu6PW+3u1YdNku6RTLI2HQ/hLrd0eGaXy5Wx2ygkjDmYfBBfW5vZ1bUyJVJSw6aDCW77Ymta7CiyGHBBNMwGESGnx0OY09D3HB12McqCQPkCab+GpBQ715yj/jYnZ2uheWzii2BesLIMSiTOxK/5YpV6/yvnLFjAaB029ouLoDIxyeqjZYAMj2Boa89LpYx8Wl6EPrdv93koxKIP1Babtjf4+6zj22eXd0qMSvCADlBtIOxuHbA93iVkYZonjj3yqNEnn/nsGlDk/2ZI2Y6dCTt1gvO31ycILyk0vRsg3XdCdtLp+37ejxXLBF9gINEz5/ZOnkmUEkYyXnLFcWsy0TiUXGBMc7Fk73WyNP15mxZB3tKdScAhj9vcdCPEC20LD5KIckJCXuYx/4WD2j2mUyhkrA/GkcQllYasQLZ3zP6fp/vL73ejc02msNKYO2F9QkKkgIf6VXlLVug0nLuCJQtvTonUEfYX6cLPJaSEIweG1HoFvkoRjKVyQSvtzk/HvDv73bv6nTt6XKX3/BvvcCk+RBQwqYgt2nu6lYJNYRrdYEDlz2Lyo3F2lTFihGTBweJ/t5xSym2UBJ5DLrihj/KC5jJsK7GCQq+yzKGBTNxUIKkNGILlUop/xxDDeF6qYYHR7kPvvBiV4TZZc0xyzNHzTh5o83ZMBjqNodfanZsFOFEeK87olKWTgDkt7RKDqed8CHY0Oz4wxWPmMmSvIN/WtdzAtWiJQ99jBdsIR779SEvi7UB2SFBwKSQCtCzWFxIrasnAXZcFUE8JWdzkN3e4cJKAwmPvRcJe9oAZgmVhOm0NIcwo24xA2nFxcavP2X2dnveaWcWSxuPOcSjQtgW4iD4mG8R0vWNtj3drn9c9/39ug/KnzaAWUIFYUP1rUCYFeYQliC3rcMFqScJjL3Rrk4Ge7I93e6NTXZl77NHzoQhwi822rE8mhPsFv+6oMnK2XhxpRHz06/OOd/61Em/Bpgr5EwYIFoyJ6AN0sYJEO1vVRuxW0izzx5qCP9fo0A431EgnO8oEM53FAjnOwqE8x0qCa+oNV1zxMg7+0/uhaYuerGh7bPLDkqc10febmeUb08pXmiyfemUb/nz56NpP9hYVGH4V7+ftkPRaYrsvuhaXDnTVbdKwjs7XVwiOS4d+L/uhPzdOsWeLneIE4iD8hCS42wiWasLpvkDVTcDCVyWDkuQf6xiEofSSmPLcJhcVR7J5DhGor3hn+E3fmoIo+ku8xh6AlWMHr1W3Qqk+VDCllCcRuOOh/PH5OeEOCv9V9aZhnwc7GgwLtHe3k5eO8pQEqYN4pZw6rEiBkr/bFBD+MenbKCBPm642MuWKE6CnLCyTnxLSEEJY7tLjQvKDQeueAKsaK/VTXpG2zsYXywB+5mh8B0Pi5MBV0xZKUrC1Li8xrTvsifMiw32MzFqnwZqCP/1qpcE9vdd7kN93lhcPEfHSp+MhIEtZx2uMZFY2YCfGkHsyJ0gSecNzbaGwRBOEsmk8vudjISBNccsNunpI7GV9mzImfCSKuO5Ebnjp+rNG5vt9rDYX68tqgxIRsLY058eCpGMffnMxHc3Kw+bIFcwonSLNfrfXnKRLEBVU59shNedsBJn3Ku0Z0POhL971Dzi59FBjyWKj0urjP3OGBiA9nMnrdQtm2jhGOOFHZ2TCnh9o42k5ft9Xnx8tsFCuhj2cU/Wyl/xKAk/f8pGsK2dQSYTIzSceE6PnAm/08Eg2dDBL8/JL8H2XXYjnYD3rsgvu4FpCDOReNtIhL40BT7q98MeZIWnj4hCME+rP3o3iKKB5c3z8i8GlISnHpfMY6smi0g25Ez4nD5C+oBCEqk0BHjpCYy3jUy87KaEP7zmpQH52Rk7NInUPHS+NDV5OqSi4IUk5Iq06YyITmhWM+DHDAyfbITh/LerXhTX1C/GMiI3wo9XGeVZJdPhiSZQUcQzYw1jTGuPWQxSulpD8e9Lzq+22LM3Of6FIwYycFMSxjkFHsdMflNKkRthZC/6QygeeOXwEtz1iFMojoOfjZZI3WckDEFaf8pmDorxRM3/8KQVS67G+yINTKeDo5PaROLAjung9TZHkSaraOWKHAhDn0xBcRDXU0+dAvqsl+KGQS+rEV+OUMJI3fKbAYLqW4EBhiUqjZUpGkSQo1KGN94PQcOVbaKeyeTX/CCECfwhEMYUSkaANcPUtetH/T5cwvW3LogyM41o4YAmv9IiTkuYxpEvuOtg7yjiT1sj6JZWNVD1NdL71/81YWwSMDKoMdYbaZcAaBJ5HAgpPmYj7IjETz8I/+ikFfRQfkhdGL2xxKbWiR8+UGBXQO46dHX0IRDODxQI5zsKhPMdBcL5jgLhfEeBcL6jQDjfUSCc7/iaES7T/wd0C3jKJ4EdLAAAAABJRU5ErkJggg\u003d\u003d"
+      },
+      "Metadata": {
+        "RFCFunction": [
+          {
+            "NAME": "MEREP_CONTACT_CREATE",
+            "DESC": "MEREP_CONTACT_CREATE",
+            "RFCParameter": [
+              {
+                "NAME": "PERSON",
+                "DESC": "ME Relica: Person (Sample Application)",
+                "INDEX": "0",
+                "TYPE": "17",
+                "LENGTH": "0",
+                "DECIMAL": "0",
+                "SAP_TYPE": "MEREP_PERSON",
+                "DIRECTION": "0",
+                "RFCField": [
+                  {
+                    "NAME": "MANDT",
+                    "DESC": "Client",
+                    "INDEX": "0",
+                    "TYPE": "0",
+                    "LENGTH": "3",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "PERSNUMBER",
+                    "DESC": "Person Number (Sample Application)",
+                    "INDEX": "1",
+                    "TYPE": "6",
+                    "LENGTH": "10",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "FIRST_NAME",
+                    "DESC": "First Name (Sample Application)",
+                    "INDEX": "2",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "LAST_NAME",
+                    "DESC": "Last Name (Sample Application)",
+                    "INDEX": "3",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "PROFESSION",
+                    "DESC": "Profession (Sample Application)",
+                    "INDEX": "4",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "SEX",
+                    "DESC": "Gender (Sample Application)",
+                    "INDEX": "5",
+                    "TYPE": "0",
+                    "LENGTH": "1",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "BIRTHDAY",
+                    "DESC": "Birthday (Sample Application)",
+                    "INDEX": "6",
+                    "TYPE": "1",
+                    "LENGTH": "8",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "DATE",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "WEIGHT",
+                    "DESC": "Weight (Sample Application)",
+                    "INDEX": "7",
+                    "TYPE": "2",
+                    "LENGTH": "3",
+                    "DECIMAL": "2",
+                    "SAP_TYPE": "BCD",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "HEIGHT",
+                    "DESC": "Height (Sample Application)",
+                    "INDEX": "8",
+                    "TYPE": "2",
+                    "LENGTH": "3",
+                    "DECIMAL": "2",
+                    "SAP_TYPE": "BCD",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "CATEGORY1",
+                    "DESC": "Category1 (Sample Application)",
+                    "INDEX": "9",
+                    "TYPE": "6",
+                    "LENGTH": "2",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "CATEGORY2",
+                    "DESC": "Category2 (Sample Application)",
+                    "INDEX": "10",
+                    "TYPE": "0",
+                    "LENGTH": "20",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "CREDAT",
+                    "DESC": "Created on",
+                    "INDEX": "11",
+                    "TYPE": "1",
+                    "LENGTH": "8",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "DATE",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "CRENAM",
+                    "DESC": "Created by",
+                    "INDEX": "12",
+                    "TYPE": "0",
+                    "LENGTH": "12",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "CRETIM",
+                    "DESC": "Create Time",
+                    "INDEX": "13",
+                    "TYPE": "3",
+                    "LENGTH": "6",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "TIME",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "CHGDAT",
+                    "DESC": "Last Changed on",
+                    "INDEX": "14",
+                    "TYPE": "1",
+                    "LENGTH": "8",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "DATE",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "CHGNAM",
+                    "DESC": "Last Changed by",
+                    "INDEX": "15",
+                    "TYPE": "0",
+                    "LENGTH": "12",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "0"
+                  },
+                  {
+                    "NAME": "CHGTIM",
+                    "DESC": "Last Changed at",
+                    "INDEX": "16",
+                    "TYPE": "3",
+                    "LENGTH": "6",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "TIME",
+                    "DIRECTION": "0"
+                  }
+                ]
+              },
+              {
+                "NAME": "PERSNUMBER",
+                "DESC": "ME Replica: Personal number (Sample application)",
+                "INDEX": "1",
+                "TYPE": "6",
+                "LENGTH": "0",
+                "DECIMAL": "0",
+                "SAP_TYPE": "NUM",
+                "DIRECTION": "1"
+              },
+              {
+                "NAME": "RETURN",
+                "DESC": "Return Parameter",
+                "INDEX": "2",
+                "TYPE": "17",
+                "LENGTH": "0",
+                "DECIMAL": "0",
+                "SAP_TYPE": "BAPIRET2",
+                "DIRECTION": "1",
+                "RFCField": [
+                  {
+                    "NAME": "TYPE",
+                    "DESC": "Message type: S Success, E Error, W Warning, I Info, A Abort",
+                    "INDEX": "0",
+                    "TYPE": "0",
+                    "LENGTH": "1",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "ID",
+                    "DESC": "Message Class",
+                    "INDEX": "1",
+                    "TYPE": "0",
+                    "LENGTH": "20",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "NUMBER",
+                    "DESC": "Message Number",
+                    "INDEX": "2",
+                    "TYPE": "6",
+                    "LENGTH": "3",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "MESSAGE",
+                    "DESC": "Message Text",
+                    "INDEX": "3",
+                    "TYPE": "0",
+                    "LENGTH": "220",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "LOG_NO",
+                    "DESC": "Application log: log number",
+                    "INDEX": "4",
+                    "TYPE": "0",
+                    "LENGTH": "20",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "LOG_MSG_NO",
+                    "DESC": "Application log: Internal message serial number",
+                    "INDEX": "5",
+                    "TYPE": "6",
+                    "LENGTH": "6",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "MESSAGE_V1",
+                    "DESC": "Message Variable",
+                    "INDEX": "6",
+                    "TYPE": "0",
+                    "LENGTH": "50",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "MESSAGE_V2",
+                    "DESC": "Message Variable",
+                    "INDEX": "7",
+                    "TYPE": "0",
+                    "LENGTH": "50",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "MESSAGE_V3",
+                    "DESC": "Message Variable",
+                    "INDEX": "8",
+                    "TYPE": "0",
+                    "LENGTH": "50",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "MESSAGE_V4",
+                    "DESC": "Message Variable",
+                    "INDEX": "9",
+                    "TYPE": "0",
+                    "LENGTH": "50",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "PARAMETER",
+                    "DESC": "Parameter Name",
+                    "INDEX": "10",
+                    "TYPE": "0",
+                    "LENGTH": "32",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "ROW",
+                    "DESC": "Lines in parameter",
+                    "INDEX": "11",
+                    "TYPE": "8",
+                    "LENGTH": "4",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "INT",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "FIELD",
+                    "DESC": "Field in parameter",
+                    "INDEX": "12",
+                    "TYPE": "0",
+                    "LENGTH": "30",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "SYSTEM",
+                    "DESC": "Logical system from which message originates",
+                    "INDEX": "13",
+                    "TYPE": "0",
+                    "LENGTH": "10",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  }
+                ]
+              },
+              {
+                "NAME": "ADDRESS",
+                "DESC": "ME Relica: Address (Sample Application)",
+                "INDEX": "3",
+                "TYPE": "99",
+                "LENGTH": "0",
+                "DECIMAL": "0",
+                "SAP_TYPE": "MEREP_ADDRESS",
+                "DIRECTION": "3",
+                "RFCField": [
+                  {
+                    "NAME": "MANDT",
+                    "DESC": "Client",
+                    "INDEX": "0",
+                    "TYPE": "0",
+                    "LENGTH": "3",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "PERSNUMBER",
+                    "DESC": "Person Number (Sample Application)",
+                    "INDEX": "1",
+                    "TYPE": "6",
+                    "LENGTH": "10",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "SEQNO_ADR",
+                    "DESC": "Seqeunce Number (Sample Application)",
+                    "INDEX": "2",
+                    "TYPE": "6",
+                    "LENGTH": "10",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "CITY1",
+                    "DESC": "City1 (Sample Application)",
+                    "INDEX": "3",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "CITY2",
+                    "DESC": "City2 (Sample Application)",
+                    "INDEX": "4",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "STREET",
+                    "DESC": "Street (Sample Application)",
+                    "INDEX": "5",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "HOUSE_NUM",
+                    "DESC": "House Number (Sample Application)",
+                    "INDEX": "6",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "REGION",
+                    "DESC": "Region (Sample Application)",
+                    "INDEX": "7",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "LAND",
+                    "DESC": "Country (Sample Application)",
+                    "INDEX": "8",
+                    "TYPE": "0",
+                    "LENGTH": "3",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  }
+                ]
+              },
+              {
+                "NAME": "E_MAIL",
+                "DESC": "ME Relica: E-mail addressa (Sample Application)",
+                "INDEX": "4",
+                "TYPE": "99",
+                "LENGTH": "0",
+                "DECIMAL": "0",
+                "SAP_TYPE": "MEREP_E_MAIL",
+                "DIRECTION": "3",
+                "RFCField": [
+                  {
+                    "NAME": "MANDT",
+                    "DESC": "Client",
+                    "INDEX": "0",
+                    "TYPE": "0",
+                    "LENGTH": "3",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "PERSNUMBER",
+                    "DESC": "Person Number (Sample Application)",
+                    "INDEX": "1",
+                    "TYPE": "6",
+                    "LENGTH": "10",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "SEQNO_E_MAIL",
+                    "DESC": "Seqeunce Number (Sample Application)",
+                    "INDEX": "2",
+                    "TYPE": "6",
+                    "LENGTH": "10",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "E_ADDR",
+                    "DESC": "E-mail Address (Sample Application)",
+                    "INDEX": "3",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "E_ADDR_TEXT",
+                    "DESC": "E-mail Address Description (Sample Application)",
+                    "INDEX": "4",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "NAME": "MEREP_CONTACT_GETDETAIL",
+            "DESC": "MEREP_CONTACT_GETDETAIL",
+            "RFCParameter": [
+              {
+                "NAME": "PERSNUMBER",
+                "DESC": "ME Replica: Personal number (Sample application)",
+                "INDEX": "0",
+                "TYPE": "6",
+                "LENGTH": "0",
+                "DECIMAL": "0",
+                "SAP_TYPE": "NUM",
+                "DIRECTION": "0"
+              },
+              {
+                "NAME": "PERSON",
+                "DESC": "ME Relica: Person (Sample Application)",
+                "INDEX": "1",
+                "TYPE": "17",
+                "LENGTH": "0",
+                "DECIMAL": "0",
+                "SAP_TYPE": "MEREP_PERSON",
+                "DIRECTION": "1",
+                "RFCField": [
+                  {
+                    "NAME": "MANDT",
+                    "DESC": "Client",
+                    "INDEX": "0",
+                    "TYPE": "0",
+                    "LENGTH": "3",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "PERSNUMBER",
+                    "DESC": "Person Number (Sample Application)",
+                    "INDEX": "1",
+                    "TYPE": "6",
+                    "LENGTH": "10",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "FIRST_NAME",
+                    "DESC": "First Name (Sample Application)",
+                    "INDEX": "2",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "LAST_NAME",
+                    "DESC": "Last Name (Sample Application)",
+                    "INDEX": "3",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "PROFESSION",
+                    "DESC": "Profession (Sample Application)",
+                    "INDEX": "4",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "SEX",
+                    "DESC": "Gender (Sample Application)",
+                    "INDEX": "5",
+                    "TYPE": "0",
+                    "LENGTH": "1",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "BIRTHDAY",
+                    "DESC": "Birthday (Sample Application)",
+                    "INDEX": "6",
+                    "TYPE": "1",
+                    "LENGTH": "8",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "DATE",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "WEIGHT",
+                    "DESC": "Weight (Sample Application)",
+                    "INDEX": "7",
+                    "TYPE": "2",
+                    "LENGTH": "3",
+                    "DECIMAL": "2",
+                    "SAP_TYPE": "BCD",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "HEIGHT",
+                    "DESC": "Height (Sample Application)",
+                    "INDEX": "8",
+                    "TYPE": "2",
+                    "LENGTH": "3",
+                    "DECIMAL": "2",
+                    "SAP_TYPE": "BCD",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "CATEGORY1",
+                    "DESC": "Category1 (Sample Application)",
+                    "INDEX": "9",
+                    "TYPE": "6",
+                    "LENGTH": "2",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "CATEGORY2",
+                    "DESC": "Category2 (Sample Application)",
+                    "INDEX": "10",
+                    "TYPE": "0",
+                    "LENGTH": "20",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "CREDAT",
+                    "DESC": "Created on",
+                    "INDEX": "11",
+                    "TYPE": "1",
+                    "LENGTH": "8",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "DATE",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "CRENAM",
+                    "DESC": "Created by",
+                    "INDEX": "12",
+                    "TYPE": "0",
+                    "LENGTH": "12",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "CRETIM",
+                    "DESC": "Create Time",
+                    "INDEX": "13",
+                    "TYPE": "3",
+                    "LENGTH": "6",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "TIME",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "CHGDAT",
+                    "DESC": "Last Changed on",
+                    "INDEX": "14",
+                    "TYPE": "1",
+                    "LENGTH": "8",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "DATE",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "CHGNAM",
+                    "DESC": "Last Changed by",
+                    "INDEX": "15",
+                    "TYPE": "0",
+                    "LENGTH": "12",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "CHGTIM",
+                    "DESC": "Last Changed at",
+                    "INDEX": "16",
+                    "TYPE": "3",
+                    "LENGTH": "6",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "TIME",
+                    "DIRECTION": "1"
+                  }
+                ]
+              },
+              {
+                "NAME": "RETURN",
+                "DESC": "Return Parameter",
+                "INDEX": "2",
+                "TYPE": "17",
+                "LENGTH": "0",
+                "DECIMAL": "0",
+                "SAP_TYPE": "BAPIRET2",
+                "DIRECTION": "1",
+                "RFCField": [
+                  {
+                    "NAME": "TYPE",
+                    "DESC": "Message type: S Success, E Error, W Warning, I Info, A Abort",
+                    "INDEX": "0",
+                    "TYPE": "0",
+                    "LENGTH": "1",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "ID",
+                    "DESC": "Message Class",
+                    "INDEX": "1",
+                    "TYPE": "0",
+                    "LENGTH": "20",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "NUMBER",
+                    "DESC": "Message Number",
+                    "INDEX": "2",
+                    "TYPE": "6",
+                    "LENGTH": "3",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "MESSAGE",
+                    "DESC": "Message Text",
+                    "INDEX": "3",
+                    "TYPE": "0",
+                    "LENGTH": "220",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "LOG_NO",
+                    "DESC": "Application log: log number",
+                    "INDEX": "4",
+                    "TYPE": "0",
+                    "LENGTH": "20",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "LOG_MSG_NO",
+                    "DESC": "Application log: Internal message serial number",
+                    "INDEX": "5",
+                    "TYPE": "6",
+                    "LENGTH": "6",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "MESSAGE_V1",
+                    "DESC": "Message Variable",
+                    "INDEX": "6",
+                    "TYPE": "0",
+                    "LENGTH": "50",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "MESSAGE_V2",
+                    "DESC": "Message Variable",
+                    "INDEX": "7",
+                    "TYPE": "0",
+                    "LENGTH": "50",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "MESSAGE_V3",
+                    "DESC": "Message Variable",
+                    "INDEX": "8",
+                    "TYPE": "0",
+                    "LENGTH": "50",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "MESSAGE_V4",
+                    "DESC": "Message Variable",
+                    "INDEX": "9",
+                    "TYPE": "0",
+                    "LENGTH": "50",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "PARAMETER",
+                    "DESC": "Parameter Name",
+                    "INDEX": "10",
+                    "TYPE": "0",
+                    "LENGTH": "32",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "ROW",
+                    "DESC": "Lines in parameter",
+                    "INDEX": "11",
+                    "TYPE": "8",
+                    "LENGTH": "4",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "INT",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "FIELD",
+                    "DESC": "Field in parameter",
+                    "INDEX": "12",
+                    "TYPE": "0",
+                    "LENGTH": "30",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  },
+                  {
+                    "NAME": "SYSTEM",
+                    "DESC": "Logical system from which message originates",
+                    "INDEX": "13",
+                    "TYPE": "0",
+                    "LENGTH": "10",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "1"
+                  }
+                ]
+              },
+              {
+                "NAME": "ADDRESS",
+                "DESC": "ME Relica: Address (Sample Application)",
+                "INDEX": "3",
+                "TYPE": "99",
+                "LENGTH": "0",
+                "DECIMAL": "0",
+                "SAP_TYPE": "MEREP_ADDRESS",
+                "DIRECTION": "3",
+                "RFCField": [
+                  {
+                    "NAME": "MANDT",
+                    "DESC": "Client",
+                    "INDEX": "0",
+                    "TYPE": "0",
+                    "LENGTH": "3",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "PERSNUMBER",
+                    "DESC": "Person Number (Sample Application)",
+                    "INDEX": "1",
+                    "TYPE": "6",
+                    "LENGTH": "10",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "SEQNO_ADR",
+                    "DESC": "Seqeunce Number (Sample Application)",
+                    "INDEX": "2",
+                    "TYPE": "6",
+                    "LENGTH": "10",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "CITY1",
+                    "DESC": "City1 (Sample Application)",
+                    "INDEX": "3",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "CITY2",
+                    "DESC": "City2 (Sample Application)",
+                    "INDEX": "4",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "STREET",
+                    "DESC": "Street (Sample Application)",
+                    "INDEX": "5",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "HOUSE_NUM",
+                    "DESC": "House Number (Sample Application)",
+                    "INDEX": "6",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "REGION",
+                    "DESC": "Region (Sample Application)",
+                    "INDEX": "7",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "LAND",
+                    "DESC": "Country (Sample Application)",
+                    "INDEX": "8",
+                    "TYPE": "0",
+                    "LENGTH": "3",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  }
+                ]
+              },
+              {
+                "NAME": "E_MAIL",
+                "DESC": "ME Relica: E-mail addressa (Sample Application)",
+                "INDEX": "4",
+                "TYPE": "99",
+                "LENGTH": "0",
+                "DECIMAL": "0",
+                "SAP_TYPE": "MEREP_E_MAIL",
+                "DIRECTION": "3",
+                "RFCField": [
+                  {
+                    "NAME": "MANDT",
+                    "DESC": "Client",
+                    "INDEX": "0",
+                    "TYPE": "0",
+                    "LENGTH": "3",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "PERSNUMBER",
+                    "DESC": "Person Number (Sample Application)",
+                    "INDEX": "1",
+                    "TYPE": "6",
+                    "LENGTH": "10",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "SEQNO_E_MAIL",
+                    "DESC": "Seqeunce Number (Sample Application)",
+                    "INDEX": "2",
+                    "TYPE": "6",
+                    "LENGTH": "10",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "NUM",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "E_ADDR",
+                    "DESC": "E-mail Address (Sample Application)",
+                    "INDEX": "3",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  },
+                  {
+                    "NAME": "E_ADDR_TEXT",
+                    "DESC": "E-mail Address Description (Sample Application)",
+                    "INDEX": "4",
+                    "TYPE": "0",
+                    "LENGTH": "40",
+                    "DECIMAL": "0",
+                    "SAP_TYPE": "CHAR",
+                    "DIRECTION": "3"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Types": [
+        {
+          "Properties": {
+            "NAME": "MEREP_CONTACT_CREATE.INPUT",
+            "DESCRIPTION": "Input"
+          },
+          "Element": [
+            {
+              "Properties": {
+                "DESCRIPTION": "",
+                "DECORATION": "",
+                "NAME": "MEREP_CONTACT_CREATE.INPUT",
+                "TYPE": "Complex"
+              },
+              "Element": [
+                {
+                  "Properties": {
+                    "DESCRIPTION": "ME Relica: Person (Sample Application)",
+                    "NAME": "PERSON",
+                    "TYPE": "Complex"
+                  },
+                  "Element": [
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Client",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "3",
+                        "NAME": "MANDT",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Person Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "PERSNUMBER",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "First Name (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "FIRST_NAME",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Last Name (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "LAST_NAME",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Profession (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "PROFESSION",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Gender (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "1",
+                        "NAME": "SEX",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Birthday (Sample Application)",
+                        "NATIVE_TYPE": "1",
+                        "LENGTH": "10",
+                        "NAME": "BIRTHDAY",
+                        "XSD_TYPE": "DATE",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "2",
+                        "DESCRIPTION": "Weight (Sample Application)",
+                        "NATIVE_TYPE": "2",
+                        "LENGTH": "3",
+                        "NAME": "WEIGHT",
+                        "XSD_TYPE": "DECIMAL",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "2",
+                        "DESCRIPTION": "Height (Sample Application)",
+                        "NATIVE_TYPE": "2",
+                        "LENGTH": "3",
+                        "NAME": "HEIGHT",
+                        "XSD_TYPE": "DECIMAL",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Category1 (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "2",
+                        "NAME": "CATEGORY1",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Category2 (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "20",
+                        "NAME": "CATEGORY2",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Created on",
+                        "NATIVE_TYPE": "1",
+                        "LENGTH": "10",
+                        "NAME": "CREDAT",
+                        "XSD_TYPE": "DATE",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Created by",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "12",
+                        "NAME": "CRENAM",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Create Time",
+                        "NATIVE_TYPE": "3",
+                        "LENGTH": "8",
+                        "NAME": "CRETIM",
+                        "XSD_TYPE": "TIME",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Last Changed on",
+                        "NATIVE_TYPE": "1",
+                        "LENGTH": "10",
+                        "NAME": "CHGDAT",
+                        "XSD_TYPE": "DATE",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Last Changed by",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "12",
+                        "NAME": "CHGNAM",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Last Changed at",
+                        "NATIVE_TYPE": "3",
+                        "LENGTH": "8",
+                        "NAME": "CHGTIM",
+                        "XSD_TYPE": "TIME",
+                        "TYPE": "Simple"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "Properties": {
+                    "DESCRIPTION": "ME Relica: Address (Sample Application)",
+                    "NAME": "ADDRESS",
+                    "TYPE": "Complex"
+                  },
+                  "Element": [
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Client",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "3",
+                        "NAME": "MANDT",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Person Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "PERSNUMBER",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Seqeunce Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "SEQNO_ADR",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "City1 (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "CITY1",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "City2 (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "CITY2",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Street (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "STREET",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "House Number (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "HOUSE_NUM",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Region (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "REGION",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Country (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "3",
+                        "NAME": "LAND",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "Properties": {
+                    "DESCRIPTION": "ME Relica: E-mail addressa (Sample Application)",
+                    "NAME": "E_MAIL",
+                    "TYPE": "Complex"
+                  },
+                  "Element": [
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Client",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "3",
+                        "NAME": "MANDT",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Person Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "PERSNUMBER",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Seqeunce Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "SEQNO_E_MAIL",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "E-mail Address (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "E_ADDR",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "E-mail Address Description (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "E_ADDR_TEXT",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Properties": {
+            "NAME": "MEREP_CONTACT_CREATE.OUTPUT",
+            "DESCRIPTION": "Output"
+          },
+          "Element": [
+            {
+              "Properties": {
+                "DESCRIPTION": "",
+                "DECORATION": "",
+                "NAME": "MEREP_CONTACT_CREATE.OUTPUT",
+                "TYPE": "Complex"
+              },
+              "Element": [
+                {
+                  "Properties": {
+                    "DEFAULT": "",
+                    "FRACTION": "0",
+                    "DESCRIPTION": "ME Replica: Personal number (Sample application)",
+                    "NATIVE_TYPE": "6",
+                    "LENGTH": "10",
+                    "NAME": "PERSNUMBER",
+                    "XSD_TYPE": "LONG",
+                    "TYPE": "Simple"
+                  }
+                },
+                {
+                  "Properties": {
+                    "DESCRIPTION": "Return Parameter",
+                    "NAME": "RETURN",
+                    "TYPE": "Complex"
+                  },
+                  "Element": [
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message type: S Success, E Error, W Warning, I Info, A Abort",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "1",
+                        "NAME": "TYPE",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message Class",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "20",
+                        "NAME": "ID",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message Number",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "3",
+                        "NAME": "NUMBER",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message Text",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "220",
+                        "NAME": "MESSAGE",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Application log: log number",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "20",
+                        "NAME": "LOG_NO",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Application log: Internal message serial number",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "6",
+                        "NAME": "LOG_MSG_NO",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message Variable",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "50",
+                        "NAME": "MESSAGE_V1",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message Variable",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "50",
+                        "NAME": "MESSAGE_V2",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message Variable",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "50",
+                        "NAME": "MESSAGE_V3",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message Variable",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "50",
+                        "NAME": "MESSAGE_V4",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Parameter Name",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "32",
+                        "NAME": "PARAMETER",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Lines in parameter",
+                        "NATIVE_TYPE": "8",
+                        "LENGTH": "4",
+                        "NAME": "ROW",
+                        "XSD_TYPE": "INT",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Field in parameter",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "30",
+                        "NAME": "FIELD",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Logical system from which message originates",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "10",
+                        "NAME": "SYSTEM",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "Properties": {
+                    "DESCRIPTION": "ME Relica: Address (Sample Application)",
+                    "NAME": "ADDRESS",
+                    "TYPE": "Complex"
+                  },
+                  "Element": [
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Client",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "3",
+                        "NAME": "MANDT",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Person Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "PERSNUMBER",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Seqeunce Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "SEQNO_ADR",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "City1 (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "CITY1",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "City2 (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "CITY2",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Street (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "STREET",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "House Number (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "HOUSE_NUM",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Region (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "REGION",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Country (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "3",
+                        "NAME": "LAND",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "Properties": {
+                    "DESCRIPTION": "ME Relica: E-mail addressa (Sample Application)",
+                    "NAME": "E_MAIL",
+                    "TYPE": "Complex"
+                  },
+                  "Element": [
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Client",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "3",
+                        "NAME": "MANDT",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Person Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "PERSNUMBER",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Seqeunce Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "SEQNO_E_MAIL",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "E-mail Address (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "E_ADDR",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "E-mail Address Description (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "E_ADDR_TEXT",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Properties": {
+            "NAME": "MEREP_CONTACT_GETDETAIL.INPUT",
+            "DESCRIPTION": "Input"
+          },
+          "Element": [
+            {
+              "Properties": {
+                "DESCRIPTION": "",
+                "DECORATION": "",
+                "NAME": "MEREP_CONTACT_GETDETAIL.INPUT",
+                "TYPE": "Complex"
+              },
+              "Element": [
+                {
+                  "Properties": {
+                    "DEFAULT": "",
+                    "FRACTION": "0",
+                    "DESCRIPTION": "ME Replica: Personal number (Sample application)",
+                    "NATIVE_TYPE": "6",
+                    "LENGTH": "10",
+                    "NAME": "PERSNUMBER",
+                    "XSD_TYPE": "LONG",
+                    "TYPE": "Simple"
+                  }
+                },
+                {
+                  "Properties": {
+                    "DESCRIPTION": "ME Relica: Address (Sample Application)",
+                    "NAME": "ADDRESS",
+                    "TYPE": "Complex"
+                  },
+                  "Element": [
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Client",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "3",
+                        "NAME": "MANDT",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Person Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "PERSNUMBER",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Seqeunce Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "SEQNO_ADR",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "City1 (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "CITY1",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "City2 (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "CITY2",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Street (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "STREET",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "House Number (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "HOUSE_NUM",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Region (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "REGION",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Country (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "3",
+                        "NAME": "LAND",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "Properties": {
+                    "DESCRIPTION": "ME Relica: E-mail addressa (Sample Application)",
+                    "NAME": "E_MAIL",
+                    "TYPE": "Complex"
+                  },
+                  "Element": [
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Client",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "3",
+                        "NAME": "MANDT",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Person Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "PERSNUMBER",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Seqeunce Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "SEQNO_E_MAIL",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "E-mail Address (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "E_ADDR",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "E-mail Address Description (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "E_ADDR_TEXT",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Properties": {
+            "NAME": "MEREP_CONTACT_GETDETAIL.OUTPUT",
+            "DESCRIPTION": "Output"
+          },
+          "Element": [
+            {
+              "Properties": {
+                "DESCRIPTION": "",
+                "DECORATION": "",
+                "NAME": "MEREP_CONTACT_GETDETAIL.OUTPUT",
+                "TYPE": "Complex"
+              },
+              "Element": [
+                {
+                  "Properties": {
+                    "DESCRIPTION": "ME Relica: Person (Sample Application)",
+                    "NAME": "PERSON",
+                    "TYPE": "Complex"
+                  },
+                  "Element": [
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Client",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "3",
+                        "NAME": "MANDT",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Person Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "PERSNUMBER",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "First Name (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "FIRST_NAME",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Last Name (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "LAST_NAME",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Profession (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "PROFESSION",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Gender (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "1",
+                        "NAME": "SEX",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Birthday (Sample Application)",
+                        "NATIVE_TYPE": "1",
+                        "LENGTH": "10",
+                        "NAME": "BIRTHDAY",
+                        "XSD_TYPE": "DATE",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "2",
+                        "DESCRIPTION": "Weight (Sample Application)",
+                        "NATIVE_TYPE": "2",
+                        "LENGTH": "3",
+                        "NAME": "WEIGHT",
+                        "XSD_TYPE": "DECIMAL",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "2",
+                        "DESCRIPTION": "Height (Sample Application)",
+                        "NATIVE_TYPE": "2",
+                        "LENGTH": "3",
+                        "NAME": "HEIGHT",
+                        "XSD_TYPE": "DECIMAL",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Category1 (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "2",
+                        "NAME": "CATEGORY1",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Category2 (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "20",
+                        "NAME": "CATEGORY2",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Created on",
+                        "NATIVE_TYPE": "1",
+                        "LENGTH": "10",
+                        "NAME": "CREDAT",
+                        "XSD_TYPE": "DATE",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Created by",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "12",
+                        "NAME": "CRENAM",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Create Time",
+                        "NATIVE_TYPE": "3",
+                        "LENGTH": "8",
+                        "NAME": "CRETIM",
+                        "XSD_TYPE": "TIME",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Last Changed on",
+                        "NATIVE_TYPE": "1",
+                        "LENGTH": "10",
+                        "NAME": "CHGDAT",
+                        "XSD_TYPE": "DATE",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Last Changed by",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "12",
+                        "NAME": "CHGNAM",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Last Changed at",
+                        "NATIVE_TYPE": "3",
+                        "LENGTH": "8",
+                        "NAME": "CHGTIM",
+                        "XSD_TYPE": "TIME",
+                        "TYPE": "Simple"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "Properties": {
+                    "DESCRIPTION": "Return Parameter",
+                    "NAME": "RETURN",
+                    "TYPE": "Complex"
+                  },
+                  "Element": [
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message type: S Success, E Error, W Warning, I Info, A Abort",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "1",
+                        "NAME": "TYPE",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message Class",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "20",
+                        "NAME": "ID",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message Number",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "3",
+                        "NAME": "NUMBER",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message Text",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "220",
+                        "NAME": "MESSAGE",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Application log: log number",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "20",
+                        "NAME": "LOG_NO",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Application log: Internal message serial number",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "6",
+                        "NAME": "LOG_MSG_NO",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message Variable",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "50",
+                        "NAME": "MESSAGE_V1",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message Variable",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "50",
+                        "NAME": "MESSAGE_V2",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message Variable",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "50",
+                        "NAME": "MESSAGE_V3",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Message Variable",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "50",
+                        "NAME": "MESSAGE_V4",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Parameter Name",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "32",
+                        "NAME": "PARAMETER",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Lines in parameter",
+                        "NATIVE_TYPE": "8",
+                        "LENGTH": "4",
+                        "NAME": "ROW",
+                        "XSD_TYPE": "INT",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Field in parameter",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "30",
+                        "NAME": "FIELD",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Logical system from which message originates",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "10",
+                        "NAME": "SYSTEM",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "Properties": {
+                    "DESCRIPTION": "ME Relica: Address (Sample Application)",
+                    "NAME": "ADDRESS",
+                    "TYPE": "Complex"
+                  },
+                  "Element": [
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Client",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "3",
+                        "NAME": "MANDT",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Person Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "PERSNUMBER",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Seqeunce Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "SEQNO_ADR",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "City1 (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "CITY1",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "City2 (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "CITY2",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Street (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "STREET",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "House Number (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "HOUSE_NUM",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Region (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "REGION",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Country (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "3",
+                        "NAME": "LAND",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "Properties": {
+                    "DESCRIPTION": "ME Relica: E-mail addressa (Sample Application)",
+                    "NAME": "E_MAIL",
+                    "TYPE": "Complex"
+                  },
+                  "Element": [
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Client",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "3",
+                        "NAME": "MANDT",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Person Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "PERSNUMBER",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "Seqeunce Number (Sample Application)",
+                        "NATIVE_TYPE": "6",
+                        "LENGTH": "10",
+                        "NAME": "SEQNO_E_MAIL",
+                        "XSD_TYPE": "LONG",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "E-mail Address (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "E_ADDR",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    },
+                    {
+                      "Properties": {
+                        "DEFAULT": "",
+                        "FRACTION": "0",
+                        "DESCRIPTION": "E-mail Address Description (Sample Application)",
+                        "NATIVE_TYPE": "0",
+                        "LENGTH": "40",
+                        "NAME": "E_ADDR_TEXT",
+                        "XSD_TYPE": "STRING",
+                        "TYPE": "Simple"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Functions": [
+        {
+          "Properties": {
+            "ID": "MEREP_CONTACT_CREATE",
+            "DESCRIPTION": "Contact address: Create",
+            "ACTION": "Custom",
+            "NAME": "MEREP_CONTACT_CREATE",
+            "TYPE": "Application"
+          },
+          "Input": [
+            "MEREP_CONTACT_CREATE.INPUT"
+          ],
+          "Output": [
+            "MEREP_CONTACT_CREATE.OUTPUT"
+          ]
+        },
+        {
+          "Properties": {
+            "ID": "MEREP_CONTACT_GETDETAIL",
+            "DESCRIPTION": "Contact address: GetDetail",
+            "ACTION": "Custom",
+            "NAME": "MEREP_CONTACT_GETDETAIL",
+            "TYPE": "Application"
+          },
+          "Input": [
+            "MEREP_CONTACT_GETDETAIL.INPUT"
+          ],
+          "Output": [
+            "MEREP_CONTACT_GETDETAIL.OUTPUT"
+          ]
+        }
+      ]
+    }
+  ],
+  "Devices": [
+    {
+      "Properties": {
+        "DESCRIPTION": "iPhone",
+        "NAME": "IPHONE",
+        "TYPE": "IPHONE"
+      }
+    },
+    {
+      "Properties": {
+        "DESCRIPTION": "iPad",
+        "NAME": "IPAD",
+        "TYPE": "IPAD"
+      }
+    },
+    {
+      "Properties": {
+        "DESCRIPTION": "Android Phone",
+        "NAME": "ANDROID_PHONE",
+        "TYPE": "ANDROID_PHONE"
+      }
+    },
+    {
+      "Properties": {
+        "DESCRIPTION": "Android Tablet",
+        "NAME": "ANDROID_TABLET",
+        "TYPE": "ANDROID_TABLET"
+      }
+    }
+  ],
+  "Mappings": [
+    {
+      "Properties": {
+        "DIRECTION": "Output"
+      },
+      "Source": {
+        "SYSTEM": "ME",
+        "FUNCTION": "GET_PERSON",
+        "TYPE": "PERSON"
+      },
+      "Destination": {
+        "SYSTEM": "UNVIRED_SAP_SAMPLE",
+        "FUNCTION": "MEREP_CONTACT_GETDETAIL",
+        "TYPE": "MEREP_CONTACT_GETDETAIL.OUTPUT"
+      },
+      "Relations": [
+        {
+          "TYPE": "Root",
+          "FROM": "PERSON",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT"
+        },
+        {
+          "TYPE": "Header",
+          "FROM": "PERSON~~PERSON_HEADER",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~MANDT",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~MANDT"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~PERSNUMBER",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~PERSNUMBER"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~FIRST_NAME",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~FIRST_NAME"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~LAST_NAME",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~LAST_NAME"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~PROFESSION",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~PROFESSION"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~SEX",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~SEX"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~BIRTHDAY",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~BIRTHDAY"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~WEIGHT",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~WEIGHT"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~HEIGHT",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~HEIGHT"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CATEGORY1",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~CATEGORY1"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CATEGORY2",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~CATEGORY2"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CREDAT",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~CREDAT"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CRENAM",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~CRENAM"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CRETIM",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~CRETIM"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CHGDAT",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~CHGDAT"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CHGNAM",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~CHGNAM"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CHGTIM",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~PERSON~~CHGTIM"
+        },
+        {
+          "TYPE": "Item",
+          "FROM": "PERSON~~E_MAIL",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~E_MAIL"
+        },
+        {
+          "TYPE": "ItemField",
+          "FROM": "PERSON~~E_MAIL~~MANDT",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~E_MAIL~~MANDT"
+        },
+        {
+          "TYPE": "ItemField",
+          "FROM": "PERSON~~E_MAIL~~PERSNUMBER",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~E_MAIL~~PERSNUMBER"
+        },
+        {
+          "TYPE": "ItemField",
+          "FROM": "PERSON~~E_MAIL~~SEQNO_E_MAIL",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~E_MAIL~~SEQNO_E_MAIL"
+        },
+        {
+          "TYPE": "ItemField",
+          "FROM": "PERSON~~E_MAIL~~E_ADDR",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~E_MAIL~~E_ADDR"
+        },
+        {
+          "TYPE": "ItemField",
+          "FROM": "PERSON~~E_MAIL~~E_ADDR_TEXT",
+          "TO": "MEREP_CONTACT_GETDETAIL.OUTPUT~~E_MAIL~~E_ADDR_TEXT"
+        }
+      ]
+    },
+    {
+      "Properties": {
+        "DIRECTION": "Input"
+      },
+      "Source": {
+        "SYSTEM": "ME",
+        "FUNCTION": "GET_PERSON",
+        "TYPE": "PERSON"
+      },
+      "Destination": {
+        "SYSTEM": "UNVIRED_SAP_SAMPLE",
+        "FUNCTION": "MEREP_CONTACT_GETDETAIL",
+        "TYPE": "MEREP_CONTACT_GETDETAIL.INPUT"
+      },
+      "Relations": [
+        {
+          "TYPE": "Header",
+          "FROM": "PERSON~~PERSON_HEADER",
+          "TO": "MEREP_CONTACT_GETDETAIL.INPUT"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~PERSNUMBER",
+          "TO": "MEREP_CONTACT_GETDETAIL.INPUT~~PERSNUMBER"
+        }
+      ]
+    },
+    {
+      "Properties": {
+        "DIRECTION": "Input"
+      },
+      "Source": {
+        "SYSTEM": "ME",
+        "FUNCTION": "CREATE_PERSON",
+        "TYPE": "PERSON"
+      },
+      "Destination": {
+        "SYSTEM": "UNVIRED_SAP_SAMPLE",
+        "FUNCTION": "MEREP_CONTACT_CREATE",
+        "TYPE": "MEREP_CONTACT_CREATE.INPUT"
+      },
+      "Relations": [
+        {
+          "TYPE": "Root",
+          "FROM": "PERSON",
+          "TO": "MEREP_CONTACT_CREATE.INPUT"
+        },
+        {
+          "TYPE": "Header",
+          "FROM": "PERSON~~PERSON_HEADER",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~MANDT",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~MANDT"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~PERSNUMBER",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~PERSNUMBER"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~FIRST_NAME",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~FIRST_NAME"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~LAST_NAME",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~LAST_NAME"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~PROFESSION",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~PROFESSION"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~SEX",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~SEX"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~BIRTHDAY",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~BIRTHDAY"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~WEIGHT",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~WEIGHT"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~HEIGHT",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~HEIGHT"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CATEGORY1",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~CATEGORY1"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CATEGORY2",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~CATEGORY2"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CREDAT",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~CREDAT"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CRENAM",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~CRENAM"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CRETIM",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~CRETIM"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CHGDAT",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~CHGDAT"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CHGNAM",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~CHGNAM"
+        },
+        {
+          "TYPE": "HeaderField",
+          "FROM": "PERSON~~PERSON_HEADER~~CHGTIM",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~PERSON~~CHGTIM"
+        },
+        {
+          "TYPE": "Item",
+          "FROM": "PERSON~~E_MAIL",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~E_MAIL"
+        },
+        {
+          "TYPE": "ItemField",
+          "FROM": "PERSON~~E_MAIL~~MANDT",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~E_MAIL~~MANDT"
+        },
+        {
+          "TYPE": "ItemField",
+          "FROM": "PERSON~~E_MAIL~~PERSNUMBER",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~E_MAIL~~PERSNUMBER"
+        },
+        {
+          "TYPE": "ItemField",
+          "FROM": "PERSON~~E_MAIL~~SEQNO_E_MAIL",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~E_MAIL~~SEQNO_E_MAIL"
+        },
+        {
+          "TYPE": "ItemField",
+          "FROM": "PERSON~~E_MAIL~~E_ADDR",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~E_MAIL~~E_ADDR"
+        },
+        {
+          "TYPE": "ItemField",
+          "FROM": "PERSON~~E_MAIL~~E_ADDR_TEXT",
+          "TO": "MEREP_CONTACT_CREATE.INPUT~~E_MAIL~~E_ADDR_TEXT"
+        }
+      ]
+    }
+  ],
+  "DebugSettings": {
+    "AUTH_TOKEN": "s7gmouk1gk55q6n83skxyb9b5f6rx7v902cwsu3r",
+    "MUSRID": "testuser",
+    "FUSRID": "testandroid"
+  },
+  "Decorations": [],
+  "Events": [],
+  "Commands": [],
+  "Recipes": [],
+  "Conversations": []
+}
