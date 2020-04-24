@@ -1,5 +1,5 @@
-//	Generated using Unvired Modeller - Build R-4.000.0094
-package com.unvired.sample.sap.gen.sapproxy.record;
+//	Generated using Unvired Modeller - Build R-4.000.0120
+package com.unvired.sapsample.gen.sapproxy.record;
 
 import com.unvired.jco.Structure;
 import com.unvired.jco.meta.DataElementMeta;
@@ -13,7 +13,7 @@ public class BAPIRET2 extends Structure
 	static
 	{
 		METADATA = new StructureMeta("BAPIRET2", "" );
-		METADATA.setProxyClass("com.unvired.sample.sap.gen.sapproxy.record.BAPIRET2");
+		METADATA.setProxyClass("com.unvired.sapsample.gen.sapproxy.record.BAPIRET2");
 		METADATA.addField(new FieldMeta(0,"TYPE",new DataElementMeta(0,"CHAR","Message type: S Success, E Error, W Warning, I Info, A Abort",1,0)));
 		METADATA.addField(new FieldMeta(1,"ID",new DataElementMeta(0,"CHAR","Message Class",20,0)));
 		METADATA.addField(new FieldMeta(2,"NUMBER",new DataElementMeta(6,"NUM","Message Number",3,0)));

@@ -1,12 +1,12 @@
-//	Generated using Unvired Modeller - Build R-4.000.0094
-package com.unvired.sample.sap.gen.pa;
+//	Generated using Unvired Modeller - Build R-4.000.0120
+package com.unvired.sapsample.gen.pa;
 
 import com.unvired.lib.utility.InfoMessage;
-import com.unvired.sample.sap.gen.be.PERSON;
-import com.unvired.sample.sap.gen.sapproxy.function.MEREP_CONTACT_GETDETAIL;
-import com.unvired.sample.sap.gen.sapproxy.record.BAPIRET2;
-import com.unvired.sample.sap.gen.sapproxy.record.MEREP_E_MAIL;
-import com.unvired.sample.sap.gen.utils.BEUtility;
+import com.unvired.sapsample.gen.be.PERSON;
+import com.unvired.sapsample.gen.sapproxy.function.MEREP_CONTACT_GETDETAIL;
+import com.unvired.sapsample.gen.sapproxy.record.BAPIRET2;
+import com.unvired.sapsample.gen.sapproxy.record.MEREP_E_MAIL;
+import com.unvired.sapsample.gen.utils.BEUtility;
 import com.unvired.ump.agent.IBusinessProcess;
 import com.unvired.ump.agent.IBusinessProcess.RequestType;
 import com.unvired.ump.agent.ISAPRFCRequest;
@@ -14,7 +14,7 @@ import com.unvired.ump.agent.ISAPRFCResponse;
 import com.unvired.ump.agent.IUMPResponse;
 
 public abstract class ABSTRACT_GET_PERSON extends AppService {
-	protected com.unvired.sample.sap.gen.be.PERSON inputPERSON;
+	protected com.unvired.sapsample.gen.be.PERSON inputPERSON;
 	protected MEREP_CONTACT_GETDETAIL merep_contact_getdetail;
 
 	public void init(IBusinessProcess process) {

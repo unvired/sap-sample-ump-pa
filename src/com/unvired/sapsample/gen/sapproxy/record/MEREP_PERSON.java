@@ -1,5 +1,5 @@
-//	Generated using Unvired Modeller - Build R-4.000.0094
-package com.unvired.sample.sap.gen.sapproxy.record;
+//	Generated using Unvired Modeller - Build R-4.000.0120
+package com.unvired.sapsample.gen.sapproxy.record;
 
 import java.math.BigDecimal;
 import java.sql.Date;
@@ -17,7 +17,7 @@ public class MEREP_PERSON extends Structure
 	static
 	{
 		METADATA = new StructureMeta("MEREP_PERSON", "" );
-		METADATA.setProxyClass("com.unvired.sample.sap.gen.sapproxy.record.MEREP_PERSON");
+		METADATA.setProxyClass("com.unvired.sapsample.gen.sapproxy.record.MEREP_PERSON");
 		METADATA.addField(new FieldMeta(0,"MANDT",new DataElementMeta(0,"CHAR","Client",3,0)));
 		METADATA.addField(new FieldMeta(1,"PERSNUMBER",new DataElementMeta(6,"NUM","Person Number (Sample Application)",10,0)));
 		METADATA.addField(new FieldMeta(2,"FIRST_NAME",new DataElementMeta(0,"CHAR","First Name (Sample Application)",40,0)));

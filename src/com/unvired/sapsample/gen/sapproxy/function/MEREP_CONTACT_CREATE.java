@@ -1,5 +1,5 @@
-//	Generated using Unvired Modeller - Build R-4.000.0094
-package com.unvired.sample.sap.gen.sapproxy.function;
+//	Generated using Unvired Modeller - Build R-4.000.0120
+package com.unvired.sapsample.gen.sapproxy.function;
 
 import java.util.List;
 
@@ -10,21 +10,21 @@ import com.unvired.jco.meta.FunctionDescriptor;
 import com.unvired.jco.meta.ParameterMeta;
 import com.unvired.jco.meta.StructureMeta;
 import com.unvired.jco.meta.TableMeta;
-import com.unvired.sample.sap.gen.sapproxy.record.BAPIRET2;
-import com.unvired.sample.sap.gen.sapproxy.record.MEREP_PERSON;
-import com.unvired.sample.sap.gen.sapproxy.table.MEREP_ADDRESS_List;
-import com.unvired.sample.sap.gen.sapproxy.table.MEREP_E_MAIL_List;
+import com.unvired.sapsample.gen.sapproxy.record.BAPIRET2;
+import com.unvired.sapsample.gen.sapproxy.record.MEREP_PERSON;
+import com.unvired.sapsample.gen.sapproxy.table.MEREP_ADDRESS_List;
+import com.unvired.sapsample.gen.sapproxy.table.MEREP_E_MAIL_List;
 
-public class MEREP_CONTACT_GETDETAIL extends Function
+public class MEREP_CONTACT_CREATE extends Function
 {
 	private static final long serialVersionUID = 1L;
 	private static FunctionDescriptor funcDesc;
 
 	static
 	{
-		funcDesc = new FunctionDescriptor("MEREP_CONTACT_GETDETAIL","MEREP_CONTACT_GETDETAIL");
-		funcDesc.addParameter(new ParameterMeta(0, "PERSNUMBER", "ME Replica: Personal number (Sample application)", new DataElementMeta(6, "PERSNUMBER", "ME Replica: Personal number (Sample application)",0,0),0));
-		funcDesc.addParameter(new ParameterMeta(1, "PERSON", "ME Relica: Person (Sample Application)",MEREP_PERSON.METADATA,1));
+		funcDesc = new FunctionDescriptor("MEREP_CONTACT_CREATE","Contact address: Create");
+		funcDesc.addParameter(new ParameterMeta(0, "PERSON", "ME Relica: Person (Sample Application)",MEREP_PERSON.METADATA,0));
+		funcDesc.addParameter(new ParameterMeta(1, "PERSNUMBER", "ME Replica: Personal number (Sample application)", new DataElementMeta(6, "PERSNUMBER", "ME Replica: Personal number (Sample application)",0,0),1));
 		funcDesc.addParameter(new ParameterMeta(2, "RETURN", "Return Parameter",BAPIRET2.METADATA,1));
 		funcDesc.addParameter(new ParameterMeta(3, "ADDRESS", "ME Relica: Address (Sample Application)",MEREP_ADDRESS_List.METADATA,3));
 		funcDesc.addParameter(new ParameterMeta(4, "E_MAIL", "ME Relica: E-mail addressa (Sample Application)",MEREP_E_MAIL_List.METADATA,3));
@@ -35,9 +35,9 @@ public class MEREP_CONTACT_GETDETAIL extends Function
 		return funcDesc;
 	}
 
-	public MEREP_CONTACT_GETDETAIL() 
+	public MEREP_CONTACT_CREATE() 
 	{
-		super("MEREP_CONTACT_GETDETAIL");
+		super("MEREP_CONTACT_CREATE");
 	}
 
 	public static void fetch(String parameterName)
@@ -73,15 +73,6 @@ public class MEREP_CONTACT_GETDETAIL extends Function
 		}
 	}
 
-	public static void fetchPERSNUMBER()
-	{
-		ParameterMeta parameter = funcDesc.getParameter("PERSNUMBER");
-		if(parameter!=null)
-		{
-			parameter.setActive(true);
-		}
-	}
-
 	public static void fetchPERSON()
 	{
 		ParameterMeta parameter = funcDesc.getParameter("PERSON");
@@ -111,6 +102,15 @@ public class MEREP_CONTACT_GETDETAIL extends Function
 					break;
 				}
 			}
+		}
+	}
+
+	public static void fetchPERSNUMBER()
+	{
+		ParameterMeta parameter = funcDesc.getParameter("PERSNUMBER");
+		if(parameter!=null)
+		{
+			parameter.setActive(true);
 		}
 	}
 
@@ -210,26 +210,26 @@ public class MEREP_CONTACT_GETDETAIL extends Function
 		}
 	}
 
+	public MEREP_PERSON getPERSON()
+	{
+		return (MEREP_PERSON)getValue(0);
+	}
+
+	public void setPERSON(MEREP_PERSON value)
+	{
+		setValue(0,value);
+	}
+
 	public Long getPERSNUMBER() {
-		if(getValue(0)!=null)
-			return Long.parseLong((String) getValue(0));
+		if(getValue(1)!=null)
+			return Long.parseLong((String) getValue(1));
 		else
 			return null;
 	}
 
 	public void setPERSNUMBER(Long value) {
 		if(value!=null)
-			setValue(0,value.toString());
-	}
-
-	public MEREP_PERSON getPERSON()
-	{
-		return (MEREP_PERSON)getValue(1);
-	}
-
-	public void setPERSON(MEREP_PERSON value)
-	{
-		setValue(1,value);
+			setValue(1,value.toString());
 	}
 
 	public BAPIRET2 getRETURN()

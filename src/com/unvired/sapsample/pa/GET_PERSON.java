@@ -1,11 +1,11 @@
-//	Generated using Unvired Modeller - Build Bleeding Edge
-package com.unvired.sample.sap.pa;
+//	Generated using Unvired Modeller - Build R-4.000.0115
+package com.unvired.sapsample.pa;
 
 import com.unvired.lib.utility.InfoMessage;
 import com.unvired.lib.utility.InfoMessage.InfoMessageCategory;
 import com.unvired.lib.utility.InfoMessage.InfoMessageType;
-import com.unvired.sample.sap.gen.pa.ABSTRACT_GET_PERSON;
-import com.unvired.sample.sap.gen.sapproxy.record.BAPIRET2;
+import com.unvired.sapsample.gen.pa.ABSTRACT_GET_PERSON;
+import com.unvired.sapsample.gen.sapproxy.record.BAPIRET2;
 import com.unvired.ump.agent.IUMPResponse;
 
 public class GET_PERSON extends ABSTRACT_GET_PERSON {

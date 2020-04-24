@@ -1,5 +1,5 @@
-//	Generated using Unvired Modeller - Build R-4.000.0094
-package com.unvired.sample.sap.gen.sapproxy.table;
+//	Generated using Unvired Modeller - Build R-4.000.0120
+package com.unvired.sapsample.gen.sapproxy.table;
 
 import java.util.Enumeration;
 import java.util.Vector;
@@ -8,7 +8,7 @@ import com.unvired.jco.Table;
 import com.unvired.jco.meta.DataElementMeta;
 import com.unvired.jco.meta.FieldMeta;
 import com.unvired.jco.meta.TableMeta;
-import com.unvired.sample.sap.gen.sapproxy.record.MEREP_ADDRESS;
+import com.unvired.sapsample.gen.sapproxy.record.MEREP_ADDRESS;
 
 public class MEREP_ADDRESS_List extends Table
 {
@@ -18,8 +18,8 @@ public class MEREP_ADDRESS_List extends Table
 	static
 	{
 		METADATA = new TableMeta("MEREP_ADDRESS","");
-		METADATA.setProxyClass("com.unvired.sample.sap.gen.sapproxy.table.MEREP_ADDRESS_List");
-		METADATA.setProxyRecClass("com.unvired.sample.sap.gen.sapproxy.record.MEREP_ADDRESS");
+		METADATA.setProxyClass("com.unvired.sapsample.gen.sapproxy.table.MEREP_ADDRESS_List");
+		METADATA.setProxyRecClass("com.unvired.sapsample.gen.sapproxy.record.MEREP_ADDRESS");
 		METADATA.addField(new FieldMeta(0,"MANDT",new DataElementMeta(0,"CHAR","Client",3,0)));
 		METADATA.addField(new FieldMeta(1,"PERSNUMBER",new DataElementMeta(6,"NUM","Person Number (Sample Application)",10,0)));
 		METADATA.addField(new FieldMeta(2,"SEQNO_ADR",new DataElementMeta(6,"NUM","Seqeunce Number (Sample Application)",10,0)));

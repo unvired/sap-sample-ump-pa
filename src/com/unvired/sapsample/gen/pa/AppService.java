@@ -1,4 +1,4 @@
-package com.unvired.sample.sap.gen.pa;
+package com.unvired.sapsample.gen.pa;
 
 import java.util.Vector;
 

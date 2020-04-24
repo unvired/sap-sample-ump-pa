@@ -1,5 +1,5 @@
-//	Generated using Unvired Modeller - Build R-4.000.0094
-package com.unvired.sample.sap.gen.utils;
+//	Generated using Unvired Modeller - Build R-4.000.0120
+package com.unvired.sapsample.gen.utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.Map.Entry;
 
 import com.unvired.lib.utility.BusinessEntity;
 import com.unvired.lib.utility.Structure;
-import com.unvired.sample.sap.gen.be.PERSON;
+import com.unvired.sapsample.gen.be.PERSON;
 
 public class BEUtility
 {
